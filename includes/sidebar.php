@@ -27,15 +27,81 @@
       <li>
         <div class="px-5 py-3 font-semibold text-sm uppercase text-gray-400">Kepegawaian</div>
         <ul class="space-y-1 ml-4 text-sm">
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Cuti</a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Kenaikan Pangkat <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Pencantuman Gelar <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Anjab/ABK <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Izin Belajar <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Mutasi <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Kenaikan Gaji <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">Pensiun <i class="fa-solid fa-download"></i></a></li>
-          <li><a href="#" class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">SOTK <i class="fa-solid fa-download"></i></a></li>
+          <li class="relative group">
+            <div class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded cursor-pointer">
+              Cuti <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
+            </div>
+
+            <!-- Dropdown menu -->
+            <ul class="absolute left-full top-0 w-60 bg-white text-black dark:bg-[#1f2937] dark:text-white shadow-lg rounded hidden group-hover:block z-10">
+              <li>
+                <a href="./../public/downloads/cuti-sakit.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Sakit <i class="fa-solid fa-download"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./../public/downloads/cuti-alasan-penting.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Alasan Penting <i class="fa-solid fa-download"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./../public/downloads/cuti-ibadah.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Ibadah <i class="fa-solid fa-download"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./../public/downloads/cuti-tahunan.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Tahunan <i class="fa-solid fa-download"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./../public/downloads/cuti-melahirkan.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Melahirkan <i class="fa-solid fa-download"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="./../public/downloads/test.txt" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Kenaikan Pangkat <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/pencantuman-gelar.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Pencantuman Gelar <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/anjab-abk.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Anjab/ABK <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/izin-belajar.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Izin Belajar <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/mutasi.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Mutasi <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/kenaikan-gaji.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Kenaikan Gaji <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/pensiun.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              Pensiun <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./../public/downloads/sotk.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+              SOTK <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
         </ul>
       </li>
     </ul>
