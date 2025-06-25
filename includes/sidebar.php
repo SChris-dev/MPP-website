@@ -39,27 +39,27 @@ require_once __DIR__ . '/db.php';
             <!-- Dropdown menu -->
             <ul class="absolute left-full top-0 w-60 bg-white text-black dark:bg-[#1f2937] dark:text-white shadow-lg rounded hidden group-hover:block z-10">
               <li>
-                <a href="./../public/downloads/cuti-sakit.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                <a href="./../public/downloads/Form Cuti Sakit Unduh.docx" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
                   Cuti Sakit <i class="fa-solid fa-download"></i>
                 </a>
               </li>
               <li>
-                <a href="./../public/downloads/cuti-alasan-penting.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                <a href="./../public/downloads/Form Cuti Alasan Penting Pelaksana Unduh.docx" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
                   Cuti Alasan Penting <i class="fa-solid fa-download"></i>
                 </a>
               </li>
               <li>
-                <a href="./../public/downloads/cuti-ibadah.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
-                  Cuti Ibadah <i class="fa-solid fa-download"></i>
+                <a href="./../public/downloads/Form Cuti Besar Unduh.docx" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                  Cuti Besar <i class="fa-solid fa-download"></i>
                 </a>
               </li>
               <li>
-                <a href="./../public/downloads/cuti-tahunan.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                <a href="./../public/downloads/Form Cuti Tahunan Unduh.docx" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
                   Cuti Tahunan <i class="fa-solid fa-download"></i>
                 </a>
               </li>
               <li>
-                <a href="./../public/downloads/cuti-melahirkan.pdf" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                <a href="./../public/downloads/Form Cuti Melahirkan unduh.docx" download class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
                   Cuti Melahirkan <i class="fa-solid fa-download"></i>
                 </a>
               </li>
