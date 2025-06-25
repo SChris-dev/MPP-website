@@ -20,7 +20,10 @@
   <nav class="mt-5">
     <ul class="space-y-1">
       <li>
-        <a href="#" class="block px-5 py-3 hover:bg-customText">Data Pegawai</a>
+        <a href="./pegawai.php" class="block px-5 py-3 hover:bg-customText">Data Pegawai</a>
+      </li>
+      <li>
+        <a href="./files.php" class="block px-5 py-3 hover:bg-customText">Data File</a>
       </li>
     </ul>
   </nav>

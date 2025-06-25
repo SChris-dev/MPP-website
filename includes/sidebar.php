@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/db.php';
+
+?>
 <!-- sidebar.php -->
 <aside id="sidebar"
        class="fixed top-0 left-0 w-64 bg-customBg text-white min-h-screen shadow-lg transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-50">
@@ -63,44 +67,26 @@
           </li>
 
           <li>
-            <a href="./../public/downloads/test.txt" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Kenaikan Pangkat <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/pencantuman-gelar.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Pencantuman Gelar <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/anjab-abk.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Anjab/ABK <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/izin-belajar.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Izin Belajar <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/mutasi.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Mutasi <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/kenaikan-gaji.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Kenaikan Gaji <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/pensiun.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              Pensiun <i class="fa-solid fa-download"></i>
-            </a>
-          </li>
-          <li>
-            <a href="./../public/downloads/sotk.pdf" download class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
-              SOTK <i class="fa-solid fa-download"></i>
-            </a>
+            <div class="max-h-64 overflow-y-auto pr-1">
+              <?php
+                try {
+                  $stmt = $pdo->query("SELECT filename, path FROM files ORDER BY uploaded_at ASC LIMIT 20");
+                  $files = $stmt->fetchAll();
+
+                  foreach ($files as $file): ?>
+                    <li>
+                      <a href="./../public/<?= htmlspecialchars($file['path']) ?>" download
+                        class="flex justify-between items-center px-5 py-2 hover:bg-customText rounded">
+                        <?= htmlspecialchars($file['filename']) ?>
+                        <i class="fa-solid fa-download"></i>
+                      </a>
+                    </li>
+                  <?php endforeach;
+                } catch (PDOException $e) {
+                  echo '<li class="px-5 py-2 text-red-500">Error loading files</li>';
+                }
+              ?>
+            </div>
           </li>
         </ul>
       </li>
